@@ -127,10 +127,8 @@ function resetTiles() {
 $(window).load(function() {
   // When the page has loaded
   $('.masonry').fadeIn(2000);
-  $('#drawer').fadeIn(2000);
   $('.footer').fadeIn(2000);
   $('.textwrap').fadeIn(1000);
-  $('#navigation').fadeIn(2000);
 });
 
 //Safari unsorted content fix
@@ -165,12 +163,16 @@ $(document).ready(function(){
 function openDrawer() {
 
   if($(window).width() < 450) {
+  	$('#drawer').fadeIn(300);
+  	$('#navigation').fadeIn(300);
     $('#drawer').css('left', '0');
     $('#title_bar').stop().transition({width: '0'}, 300);
     $('#content').stop().transition({right: ($(window).width())}, 300, function(){
       resetTiles();
     });
   } else {
+  	  $('#drawer').fadeIn(300);
+  	  $('#navigation').fadeIn(300);
       $('#drawer').css('left', '50%');
       var windowHalf = ($(window).width() / 2);
       $('#content').stop().transition({right: windowHalf}, 300, function(){
@@ -188,10 +190,11 @@ function openDrawer() {
 
 function closeDrawer() {
 
+  $('#drawer').fadeOut(300);
+  $('#navigation').fadeOut(300);  
   $('.tab').removeClass('open');
   $('#drawer .tab').css('display', 'none');
   $('#content .tab ').css('display', 'block');
-
   $('#content').css('margin', '0').transition({ right: '0'}, function(){
     resetTiles();
   });
