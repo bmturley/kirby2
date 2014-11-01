@@ -376,12 +376,6 @@ input[type=submit]:hover {
   border-color:#222
 }
 
-/********************
-fancyBox CSS
-********************/
-
-
-
 /*********************
 MAIN CSS
  *********************/
@@ -562,6 +556,24 @@ DRAWER
 
 #tumblr {
   background: url('../images/tumblr_25px.png');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+
+  #facebook {
+    background-image: url('../images/facebook_50px.png');
+    background-size: 25px 25px; /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  #instagram {
+    background-image: url('../images/instagram_50px.png');
+    background-size: 25px 25px; /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  #tumblr {
+    background-image: url('../images/tumblr_50px.png');
+    background-size: 25px 25px; /*The size of the normal image, half the size of the hi-res image*/
+  }
 }
 
 

@@ -198,7 +198,7 @@ function closeDrawer() {
   $('#content').css('margin', '0').transition({ right: '0'}, function(){
     resetTiles();
   });
-  $('#title_bar').stop().transition({width: '100%'}, 300);
+  $('#title_bar').stop().transition({width: '100%'}, 400);
 }
 
 //********************
