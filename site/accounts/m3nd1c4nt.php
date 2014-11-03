@@ -7,3 +7,6 @@ password: >
 language: en
 role: admin
 token: 0149b2eb0bdd3ab80dea86f62a627296cb6f0736
+history:
+  - about
+  - surf

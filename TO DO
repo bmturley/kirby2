@@ -1,9 +1,11 @@
 TO DO
 
 - Set up panel
+	- Figure out max dimensions of photos to allow auto-thumbnailing
+		- See if square photos are still broken
+	- Add variables to drawer navigation to reflect changes made to panel
 - Fancybox
 	- loading.gif
 - Favicon
-- Contact page
 
 - Delete 'TO DO' from /kirby2
