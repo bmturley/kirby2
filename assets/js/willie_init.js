@@ -128,7 +128,7 @@ $(window).load(function() {
   // When the page has loaded
   $('.masonry').fadeIn(2000);
   $('.footer').fadeIn(2000);
-  $('.textwrap').fadeIn(1000);
+  $('.aboutwrapper').fadeIn(1000);
 });
 
 //Safari unsorted content fix
