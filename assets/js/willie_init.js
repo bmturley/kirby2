@@ -49,7 +49,8 @@ fancyBox init
 $(document).ready(function () {
   $('.block a').fancybox({
     padding : 0,
-    margin : [85, 60, 85, 60],
+    margin : [20, 60, 20, 60],
+    autoWidth : true,
     scrolling : 'no',
     nextEffect : 'none',
     prevEffect : 'none',
