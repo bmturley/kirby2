@@ -38,11 +38,6 @@
 <meta itemprop="description" content="<?php echo html($page->description()) ?>">
 
 <!-- Styles -->
-<!-- <link rel="stylesheet" href="<?php echo url('assets/css/base.css') ?>" type="text/css" media="all" />
- --><!--[if lt IE 9 ]><link rel="stylesheet" href="<?php echo url('assets/css/720_grid.css') ?>" type="text/css"><![endif]-->
-<!-- <link rel="stylesheet" href="<?php echo url('assets/css/720_grid.css') ?>" type="text/css" media="screen and (min-width: 720px)" />
-<link rel="stylesheet" href="<?php echo url('assets/css/986_grid.css') ?>" type="text/css" media="screen and (min-width: 986px)" />
-<link rel="stylesheet" href="<?php echo url('assets/css/1236_grid.css') ?>" media="screen and (min-width: 1236px)" /> -->
 <link rel="stylesheet" type="text/css" href="<?php echo url('assets/fancybox/source/jquery.fancybox.css') ?>" />  
 <link rel="stylesheet" type="text/css" href="<?php echo url('assets/css/willie.css') ?>"/>
 
@@ -58,10 +53,7 @@
 
 <!--jQuery and Masonry -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- <?php echo js('assets/js/jquery.masonry.js') ?> -->
 <?php echo js('assets/js/willie_init.js') ?>
-<!-- <?php echo js('assets/js/jquery.transit.min.js') ?> -->
-<!-- <?php echo js('assets/js/modernizr-2.6.2-respond-1.1.0.min.js') ?> -->
 <?php echo js('assets/fancybox/source/jquery.fancybox.pack.js') ?>
 
 </head>

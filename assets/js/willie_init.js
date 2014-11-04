@@ -65,52 +65,6 @@ $(document).ready(function () {
   });
 });
 
-/********************
-Spinner
-********************/
-
-(function() {
-    SpriteSpinner = function(el, options){
-        var self = this,
-            img = el.children[0];
-        this.interval = options.interval || 10;
-        this.diameter = options.diameter || img.width;
-        this.count = 0;
-        this.el = el;
-        img.setAttribute("style", "position:absolute");
-        el.style.width = this.diameter+"px";
-        el.style.height = this.diameter+"px";
-        return this;
-    };
-    SpriteSpinner.prototype.start = function(){
-        var self = this,
-            count = 0,
-            img = this.el.children[0];
-        this.el.display = "block";
-        self.loop = setInterval(function(){
-            if(count == 19){
-                count = 0;
-            }
-            img.style.top = (-self.diameter*count)+"px";
-            count++;
-        }, this.interval);
-    };
-    SpriteSpinner.prototype.stop = function(){
-        clearInterval(this.loop);
-        this.el.style.display = "none";
-    };
-    document.SpriteSpinner = SpriteSpinner;
-})();
-
-$(document).ready(function(){
-    $(".sprite-spinner").each(function(i){
-      var s = new SpriteSpinner(this, {
-        interval:50
-      });
-      s.start();
-    });
-});
-
 
 /********************
 MAIN
@@ -182,8 +136,6 @@ function openDrawer() {
       $('#title_bar').stop().transition({width: '50%'}, 300);
   } 
 
-  // $('.tab').css('color', '#fff').html('<img src="assets/images/close25px.png" />');
-
   $('.tab').addClass('open');
   $('#content .tab').css('display', 'none');
   $('#drawer .tab').css('display', 'block');
@@ -201,61 +153,3 @@ function closeDrawer() {
   });
   $('#title_bar').stop().transition({width: '100%'}, 400);
 }
-
-//********************
-//This is Brooke Nipar's fancybox script
-//********************
-
-// $(function() {
-//   $('.masonry a').fancybox({
-//       openEffect  : 'fade',
-//       closeEffect : 'fade',
-//       nextEffect  : 'fade',
-//       prevEffect  : 'fade',
-//       autoSize    : true,
-//       padding     : 0,
-//       // width: 1280,
-//       // height: 720,
-//       // aspectRatio: true,
-//       autoResize: true,
-//       // nextClick : true,
-//       // margin      : [85, 60, 85, 60], // Increase left/right margin
-//       helpers : {
-//           media : {},
-//           overlay : {
-//               css : {
-//                   'background' : '#FFFFFF'
-//               }
-//           }
-//       }
-//       // afterLoad: function() {
-//       //     $('body').append('<h1 class="closer">&#215;</h1>');
-//       // }
-//   });
-// });
-
-//********************
-//This is my original fancybox script
-//********************
-
-// $(function() {
-
-//   $('.masonry a').fancybox({
-//     // beforeShow: function(){
-//     //   $('.fancybox-skin').css('padding', '0');
-//     // },
-//     scrolling: 'no',
-//     helpers : { 
-//       overlay: {
-//         locked: false,
-//         opacity: 1, // or the opacity you want 
-//         css: {'background': '#ffffff'} // or your preferred hex color value
-//       } // overlay 
-//     } // helpers
-//   }); // fancybox
-
-//   // $('html.js body div.fancybox-wrap div.fancybox-skin div.fancybox-outer a.fancybox-nav').fancybox({
-//   //   wrapCSS : '.willie-fancybox-next'
-//   // });
-
-// });
