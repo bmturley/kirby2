@@ -479,12 +479,12 @@ html {
 }
 
 .open {
-    background: url('../../assets/images/close_30px.png') no-repeat center;
+    background: url('../../assets/images/close_36px.png') no-repeat center;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
   .open {
-    background: url('../../assets/images/close_60px.png') no-repeat center;
+    background: url('../../assets/images/close_72px.png') no-repeat center;
     background-size: 25px 25px;
   }
 }
@@ -715,19 +715,19 @@ NAVIGATION
 @media screen and (min-width: 900px) {
   .block {
     width: 250px;
-    margin: 17.5px;
+    margin: 13px;
   }
 }
 @media screen and (min-width: 1200px) {
   .block {
     width: 300px;
-    margin: 21px;
+    margin: 15.75px;
   }
 }
 @media screen and (min-width: 1525px) {
   .block {
     width: 375px;
-    margin: 26.25px;
+    margin: 19.75px;
   }
 }
 @media screen and (min-width: 1840px) {
@@ -799,7 +799,7 @@ FANCYBOX
 .fancybox-close {
   position: fixed;
   top: 1em;
-  right: 2em;
+  right: 1em;
 }
 
 .fancybox-nav {
