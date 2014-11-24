@@ -234,7 +234,6 @@ p a {
   padding:0;
   text-align:center;
   position: relative;
-  top: 1.5em;
 }
 
 a.nav, a.nav:link, a.nav:visited {
@@ -264,10 +263,6 @@ a.nav:hover, a.nav:active {
     z-index: 9;
   }
 
-  #navigation {
-    top: 1.5em;
-  }
-
   .tinynav { 
     display: block;
     position: relative;
@@ -275,10 +270,6 @@ a.nav:hover, a.nav:active {
     z-index: 10;
     float: right;
     margin-right:0.9em;
-  }
-  
-  #navigation { 
-    display: none;
   }
 }
 
@@ -550,7 +541,7 @@ DRAWER
 #drawer {
   color: #ffffff;
   background-color: #ccede0;
-  padding: 5em 0 2em 0;
+  padding: 4em 0 2em 0;
   position: fixed;
   top: 0;
   bottom: -110px; /*extends drawer so it isn't cut off by mobile safari footer bar */
@@ -563,10 +554,6 @@ DRAWER
 
 #drawer ul {
   padding: 0;
-}
-
-#social_icons {
-  margin-top: 40px;
 }
 
 #social_icons li {
@@ -618,9 +605,12 @@ DRAWER
 NAVIGATION
 *********************/
 
+#navigation {
+  margin: 0.5em 0 0.5em 0;
+}
+
 #navigation li {
   display: block;
-  margin: 0.5em 0 0.5em 0;
   font-family:'gt_walsheim_light', sans-serif;
   font-size: 12px;
   letter-spacing: 3px;
@@ -630,23 +620,20 @@ NAVIGATION
 @media screen and (min-height: 768px) { /* Fits navi on iphone in landscape mode so scrolling is not required */
   #navigation li {
     font-size: 16px;
-    margin: 0.5em 0 0.5em 0;
+    margin: 1em;
   }
 }
 
 @media screen and (min-width: 768px) { /* Fits navi on iphone in landscape mode so scrolling is not required */
   #navigation li {
     font-size: 16px;
-    margin: 0.5em 0 0.5em 0;
+    margin: 1em;
+
   }
 }
 
 #navigation li a {
   color: #000;
-}
-
-#navigation {
-  display: block;
 }
 
 
