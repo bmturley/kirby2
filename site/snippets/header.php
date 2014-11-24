@@ -46,10 +46,14 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="<?php echo url('assets/images/icons/favicon.ico') ?>" />
+<!-- <link rel="shortcut icon" href="<?php echo url('assets/images/icons/favicon.ico') ?>" />
 <link rel="apple-touch-icon" href="<?php echo url('assets/images/icons/icons/iOS/apple-touch-icon-72x72.png') ?>" />
 <link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-72x72.png') ?>" />
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" />
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/icons/iOS/apple-touch-icon-114x114.png') ?>" /> -->
+<link rel="shortcut icon" href="<?php echo url('assets/images/favicons/fav_willie_16px.png') ?>" />
+<link rel="apple-touch-icon" href="<?php echo url('assets/images/favicons/fav_willie_72px.png') ?>" />
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo url('assets/images/favicons/fav_willie_72px.png') ?>" />
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo url('assets/images/favicons/fav_willie.png') ?>" />
 
 <!--jQuery and Masonry -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
