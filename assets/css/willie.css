@@ -640,7 +640,7 @@ NAVIGATION
 /* MASONRY */
 
 .masonry {
-  margin: 0 auto 8em;
+  margin: 0.5em auto 8em;
   text-align: center;
   background-color: #fff;
   box-shadow: 0 0 20px 20px #fff;
